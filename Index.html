@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Bundle</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <h1>FLORIST LOGIN 🎉</h1>
+
+  <!-- Interactive Button -->
+  <button id="magicButton">WELCOME</button>
+  <p id="keypressInfo"></p>
+
+  <!-- Image Slideshow -->
+  <div class="slideshow">
+    <img id="slideshowImage" src="https://images.pexels.com/photos/1381683/pexels-photo-1381683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Slideshow">
+  </div>
+
+  <!-- Accordion -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <button class="accordion-header">ABOUT FLOWERS</button>
+      <div class="accordion-content">Flowers are tiny bursts of sunshine that turn any ordinary moment into something magical. Each bloom is nature’s way of smiling at us, a gentle reminder that beauty can grow anywhere. Like soft whispers of color, flowers speak straight to the soul, offering comfort, joy, and hope. They are nature’s quiet promise that even after the darkest days, something bright and beautiful can still blossom.</div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-header">ABOUT LAVENDER FLOWER SHOP</button>
+      <div class="accordion-content">This flower shop is a little haven of beauty and joy, where every bouquet is crafted with care and creativity. Walking in feels like stepping into a world of color and fragrance, where kindness blooms just as brightly as the flowers. It's more than a shop—it's a place where emotions are turned into petals and stems.</div>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <form id="signupForm" novalidate>
+    <label>Email: <input type="email" id="email" required /></label>
+    <span id="emailFeedback" class="feedback"></span><br/>
+
+    <label>Password: <input type="password" id="password" required minlength="8" /></label>
+    <span id="passwordFeedback" class="feedback"></span><br/>
+
+    <button type="submit">LOGIN</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
